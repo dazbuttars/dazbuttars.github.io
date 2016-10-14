@@ -1,0 +1,33 @@
+
+html{
+    background: lightgray;
+}
+h1{
+    background:rgb(247,2,1) ;
+    color: white;
+    border: 3px solid black;
+    text-align: center;
+}
+header{
+    background: white;
+    border: 7px solid black
+}
+img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+h2{
+    color: rgb(247,2,1);
+    background: black;
+    border: 3px solid white;
+    text-align: center;
+}
+
+h3{
+    background: black;
+    color: white;
+    border: 3px solid rgb(247,2,1);
+    margin:3px;
+}
