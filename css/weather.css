@@ -3,8 +3,8 @@ Body{
     background-attachment: fixed;
 }
 div{
-   margin: auto;
-    width: 100%;
+   position: relative;
+    left:120px;
     border: solid black 2px;
     background: rgba(192,192,192,0.5)}
 nav{
