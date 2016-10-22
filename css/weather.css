@@ -31,15 +31,15 @@ a:hover, actice {
 }
 h1{
    text-align: center;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 .forecast{
     margin-top: 1px;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2em;
 }
 figure{
-
+    width: 250px;
 
 
 }
@@ -47,20 +47,16 @@ figure{
 .hi{
     padding:0;
     margin-right:0;
-    position: absolute;
-    left:200px;
-    top: 475px;
-    width: 50px;
+    margin-bottom: 0px;
+   float: right;
     color: red;
     font-size: 2.5em;
 }
 .lo{
     padding:0;
-    margin-right:0;
-    position: absolute;
-    left:250px;
-    top: 475px;
-    width: 50px;
+    margin-left:20px;
+    margin-bottom: 0px;
+    float: right;
     color: blue;
     font-size: 2.5em;
 }
