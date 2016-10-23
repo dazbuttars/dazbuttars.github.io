@@ -1,0 +1,21 @@
+html *{
+    box-sizing: border-box;
+}
+
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+body{
+    font: 20px "times new roman", times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+header
+#page-nav{float: left; width: 25%;}
+main{float:left;
+width: 50%;}
+#page-aside{float: left; width: 25%;}
+footer{float: left;width: 100%}

@@ -1,43 +1,47 @@
-    body{
-        font-family: sans-serif;
-        background-image: url(../images/wheat2.jpg);
-        background-attachment: fixed;
-        text-align: center;
-    }
+body{
+    font-family: sans-serif;
+    background-image: url(../images/wheat2.jpg);
+    background-attachment: fixed;
+    margin: 0px;
+}
+main{
+    text-align: center;
+    margin: 0px;
+}
 /*navigation bar*/
 nav{
     text-align: center;
     font-size: 1.6em;
 }
-ul{
+#bar{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
 
 }
 a:link, a:visited{
     display: block;
     width: auto;
+    text-align: center;
     color: forestgreen;
     background-color: wheat;
     text-decoration: none;
-    text-align: center;
     font-weight: bold;
     text-transform: uppercase;
     padding: 5px;
+
 
 }
 a:hover, actice {
     background-color: saddlebrown;
 }
+/*Daily Forcast*/
 h1{
-   text-align: center;
     font-size: 2.5em;
 }
-/*Daily Forcast*/
 .forecast{
     margin-top: 1px;
-    text-align: center;
     font-size: 2em;
 }
 figure{
@@ -48,7 +52,7 @@ figure{
     padding:0;
     margin-right:0;
     margin-bottom: 0px;
-   float: right;
+    float: right;
     color: red;
     font-size: 2.5em;
 }
@@ -60,13 +64,12 @@ figure{
     color: blue;
     font-size: 2.5em;
 }
-.wind{ text-align: center;
+.wind{
     margin-bottom: 1px;
     top: -300px;
     font-size: 2em;
 }
 .ll{
-    text-align: center;
     margin-top: 1px;
     top: -300px;
     font-size: 2em;
@@ -78,9 +81,16 @@ table, th, td{
     margin-left:auto;
     margin-right:auto;
 }
-
-#wire{
+#wireS{
     width:300px;
+    height: auto;
+}
+#wireM{
+    width:350px;
+    height: auto;
+}
+#wireM{
+    width:350px;
     height: auto;
 }
 footer{color:white}
@@ -88,51 +98,76 @@ footer{color:white}
 
 /* For small screens*/
 @media screen and (max-width: 425px){
-    table{display: none}
+    table{
+        display: none
+    }
+    #wireM{
+        display: none;
+    }
+    #wireL{
+        display: none;
+    }
 }
+
+
+
+
+
 /*For medium screens*/
 @media screen and (min-width: 426px) and (max-width: 768px){
-    body{
-        background-image: none;
-        background-color:darkolivegreen;
+
+    #largeH{
+        display:none;
+    }
+    figure{
+        margin-left: auto;
+        margin-right: auto;
+        width: 250px;
+    }
+    #wireS{
+        display: none;
+    }
+    #wireL{
+        display: none;
     }
 }
+
+
+
+
+
+
+
+
 /*For large screens*/
-@media screen and (min-width:769px) and (max-width:1600px){
-    body{
-        background-image: none;
-        background-color: pink;
+@media screen and (min-width: 769px) and (max-width: 2600px){
+
+    #mediumH{
+        display: none;
     }
+
+
     /*navigation bar*/
-    nav{
-        text-align: center;
-        font-size: 1.6em;
-
-    }
-    ul{
-        text-align: center;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-
-    }
-    li{
-       float:left;
+.bar{
+    display:inline-flex;
     }
     a:link, a:visited{
-        display: block;
-        width: auto;
-        color: forestgreen;
-        background-color: wheat;
-        text-decoration: none;
-        text-align: center;
-        font-weight: bold;
-        text-transform: uppercase;
-        padding: 5px;
-
+        width: 170px;
     }
-    a:hover, actice {
-        background-color: saddlebrown;
+/*Daily Forcast*/
+figure{
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
 }
+    #wireS{
+        display: none;
+    }
+    #wireM{
+        display: none;
+    }
+}
+
+
 
 
