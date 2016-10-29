@@ -3,244 +3,190 @@
 <html lang="en-us">
 
 
-<head>
+    <head>
 
-    <meta name="viewport" content="width=device-width">
-    <!--CSS Stylesheet-->
-    <link href="../css/new_weather.css" rel="stylesheet">
+            <meta name="viewport" content="width=device-width">
+            <!--CSS Stylesheet-->
+            <link href="../css/flex_weather.css" rel="stylesheet">
 
 
 
-        <title>Franklin Weather</title>
+                <title>Franklin Weather</title>
 
 
     </head>
 
-<body>
-    <header>
-    <nav>
-        <ul id="bar">
-            <li class="bar"><a href="../index.html" title="dbuttars12.github.io home page">Home</a></li>
-            <li class="bar"><a href="../homework/franklin_weather.html" title="dbuttars12.github.io franklin weather page">Franklin</a></li>
-            <li class="bar"><a href="../homework/practice.html" title="dbuttars12.hithub.io greanville weather page">Grenville</a></li>
-            <li class="bar"><a href="../index.html" title="dbuttars12.github.io springfield weather page">Springfield</a></li>
-        </ul>
-    </nav>
+    <body>
+            <header>
+
+
+                <nav>
+                    <ul id="bar">
+                        <li class="bar"><a href="../index.html" title="dbuttars12.github.io home page">Home</a></li>
+                        <li class="bar"><a href="../homework/franklin_weather.html" title="dbuttars12.github.io franklin weather page">Franklin</a></li>
+                        <li class="bar"><a href="../homework/greenville_weather.html" title="dbuttars12.hithub.io greanville weather page">Greenville</a></li>
+                        <li class="bar"><a href="../homework/springfield_weather.html" title="dbuttars12.github.io springfield weather page">Springfield</a></li>
+                    </ul>
+                </nav>
+
+
+            </header>
+
+
+
+            <main>
+                    <div id="content">
+                        <h1>Weather Forcast For Franklin, ID (83237)</h1>
+
+                            <h2 class="forecast">Todays Forecast: Sunny</h2>
+                            <h3>Precipitation: 0%</h3>
+
+                               <figure>
+                                <img alt="Weather condition image" src="../images/weather/sunny.png">
+
+                                   <p class="hi">Hi<br>90</p>
+                                   <p class="lo">Lo<br>66</p>
+                            </figure>
 
 
 
 
 
+                            <h3 class="wind">Wind 1-5 mph Southwest</h3>
+                        <h3 class="ll">Longitude:  -111.803757<br>
+                            Latitude: 42.011902 </h3>
+                        </div>
 
-    </header>
-
-
-
-<main>
-    <h1>Weather Forcast For Franklin, ID (83237)</h1>
-
-        <h2 class="forecast">Todays Forecast: Sunny</h2>
-
-           <figure>
-            <img alt="Weather condition image" src="../images/weather/sunny.png">
-
-               <p class="lo">Lo<br>66</p>
-               <p class="hi">Hi<br>90</p>
-        </figure>
-
-
-
-
-
-        <h3 class="wind">Wind 1-5 mph Southwest</h3>
-    <h3 class="ll">Longitude:  -111.803757<br>
-        Latitude: 42.011902 </h3>
-<!--Hourly Temp-->
-    <table id="largeH">
-        <tr>
-            <th>Saturday</th>
-            <th>Midnight</th>
-            <th>1am</th>
-            <th>2am</th>
-            <th>3am</th>
-            <th>4am</th>
-            <th>5am</th>
-            <th>6am</th>
-            <th>7am</th>
-            <th>8am</th>
-            <th>9am</th>
-            <th>10am</th>
-            <th>11am</th>
-            <th>Noon</th>
-            <th>1pm</th>
-            <th>2pm</th>
-            <th>3pm</th>
-            <th>4pm</th>
-            <th>5pm</th>
-            <th>6pm</th>
-            <th>7pm</th>
-            <th>8pm</th>
-            <th>9pm</th>
-            <th>10pm</th>
-            <th>11pm</th>
-        </tr>
-        <tr>
-            <th>Temp (F)</th>
-            <th>67</th>
-            <th>67</th>
-            <th>69</th>
-            <th>69</th>
-            <th>69</th>
-            <th>70</th>
-            <th>69</th>
-            <th>72</th>
-            <th>74</th>
-            <th>77</th>
-            <th>79</th>
-            <th>81</th>
-            <th>84</th>
-            <th>86</th>
-            <th>88</th>
-            <th>90</th>
-            <th>90</th>
-            <th>85</th>
-            <th>83</th>
-            <th>79</th>
-            <th>74</th>
-            <th>70</th>
-            <th>68</th>
-            <th>66</th>
-        </tr>
-    </table>
-    <table id="mediumH">
-        <tr>
-            <th>Saturday</th>
-            <th>Temp (F)</th>
-        </tr>
-        <tr>
-            <th>Midnight</th>
-            <th>67</th>
-        </tr>
-        <tr>
-            <th>1am</th>
-            <th>67</th>
-        </tr>
-        <tr>
-            <th>2am</th>
-            <th>69</th>
-        </tr>
-        <tr>
-            <th>3am</th>
-            <th>69</th>
-        </tr>
-        <tr>
-            <th>4am</th>
-            <th>69</th>
-        </tr>
-        <tr>
-            <th>5am</th>
-            <th>70</th>
-        </tr>
-        <tr>
-            <th>6am</th>
-            <th>69</th>
-        </tr>
-        <tr>
-            <th>7am</th>
-            <th>72</th>
-        </tr>
-        <tr>
-            <th>8am</th>
-            <th>74</th>
-        </tr>
-        <tr>
-            <th>9am</th>
-            <th>77</th>
-        </tr>
-        <tr>
-            <th>10am</th>
-            <th>79</th>
-        </tr>
-        <tr>
-            <th>11am</th>
-            <th>81</th>
-        </tr>
-        <tr>
-            <th>Noon</th>
-            <th>84</th>
-        </tr>
-        <tr>
-            <th>1pm</th>
-            <th>86</th>
-        </tr>
-        <tr>
-            <th>2pm</th>
-            <th>88</th>
-        </tr>
-        <tr>
-            <th>3pm</th>
-            <th>90</th>
-        </tr>
-        <tr>
-            <th>4pm</th>
-            <th>90</th>
-        </tr>
-        <tr>
-            <th>5pm</th>
-            <th>85</th>
-        </tr>
-        <tr>
-            <th>6pm</th>
-            <th>83</th>
-        </tr>
-        <tr>
-            <th>7pm</th>
-            <th>79</th>
-        </tr>
-        <tr>
-            <th>8pm</th>
-            <th>74</th>
-        </tr>
-        <tr>
-            <th>9pm</th>
-            <th>70</th>
-        </tr>
-        <tr>
-            <th>10pm</th>
-            <th>68</th>
-        </tr>
-        <tr>
-            <th>11pm</th>
-            <th>66</th>
-        </tr>
-    </table>
-
-    <h2>Wireframe</h2>
-
-<figure>
-        <img id= "wireS" alt="weather wireframe for small screen" src="../images/weather_wireframe_small.jpg">
-       <img id= "wireM" alt="weather wireframe for medium screen" src="../images/weather_wireframe_medium.jpg">
-       <img id= "wireL" alt="weather wireframe for lagre screen" src="../images/weather_wireframe_large.jpg">
-
-</figure>
-        </main>
+                <div id="table">
+                    <h3 id=htemp>Hourly Temperature</h3>
+                        <table>
+                            <tr>
+                                <th>Saturday</th>
+                                <th>Temp (F)</th>
+                            </tr>
+                            <tr>
+                                <th>Midnight</th>
+                                <th>67</th>
+                            </tr>
+                            <tr>
+                                <th>1am</th>
+                                <th>67</th>
+                            </tr>
+                            <tr>
+                                <th>2am</th>
+                                <th>69</th>
+                            </tr>
+                            <tr>
+                                <th>3am</th>
+                                <th>69</th>
+                            </tr>
+                            <tr>
+                                <th>4am</th>
+                                <th>69</th>
+                            </tr>
+                            <tr>
+                                <th>5am</th>
+                                <th>70</th>
+                            </tr>
+                            <tr>
+                                <th>6am</th>
+                                <th>69</th>
+                            </tr>
+                            <tr>
+                                <th>7am</th>
+                                <th>72</th>
+                            </tr>
+                            <tr>
+                                <th>8am</th>
+                                <th>74</th>
+                            </tr>
+                            <tr>
+                                <th>9am</th>
+                                <th>77</th>
+                            </tr>
+                            <tr>
+                                <th>10am</th>
+                                <th>79</th>
+                            </tr>
+                            <tr>
+                                <th>11am</th>
+                                <th>81</th>
+                            </tr>
+                            <tr>
+                                <th>Noon</th>
+                                <th>84</th>
+                            </tr>
+                            <tr>
+                                <th>1pm</th>
+                                <th>86</th>
+                            </tr>
+                            <tr>
+                                <th>2pm</th>
+                                <th>88</th>
+                            </tr>
+                            <tr>
+                                <th>3pm</th>
+                                <th>90</th>
+                            </tr>
+                            <tr>
+                                <th>4pm</th>
+                                <th>90</th>
+                            </tr>
+                            <tr>
+                                <th>5pm</th>
+                                <th>85</th>
+                            </tr>
+                            <tr>
+                                <th>6pm</th>
+                                <th>83</th>
+                            </tr>
+                            <tr>
+                                <th>7pm</th>
+                                <th>79</th>
+                            </tr>
+                            <tr>
+                                <th>8pm</th>
+                                <th>74</th>
+                            </tr>
+                            <tr>
+                                <th>9pm</th>
+                                <th>70</th>
+                            </tr>
+                            <tr>
+                                <th>10pm</th>
+                                <th>68</th>
+                            </tr>
+                            <tr>
+                                <th>11pm</th>
+                                <th>66</th>
+                            </tr>
+                        </table>
+                    </div>
+                    </main>
 
 
 
 
 
-    <footer>
-        <ul>
-            <li>&copy;2016</li>
-            <li>
-                Daz Buttars
-            </li>
-            <li>Last Updated: 10/22/16
-                <!-- Put today's date following the colon -->
-            </li>
-        </ul>
-    </footer>
-    </body>
+                <footer>
+                    <h2>Wireframe</h2>
+                    <figure id="wirefigure">
+                        <img id= "wireS" alt="weather wireframe for small screen" src="../images/weather_wireframe_small.jpg">
+                        <img id= "wireM" alt="weather wireframe for medium screen" src="../images/weather_wireframe_medium.jpg">
+                        <img id= "wireL" alt="weather wireframe for lagre screen" src="../images/weather_wireframe_large.jpg">
+
+                    </figure>
+                    <ul>
+                        <li>&copy;2016</li>
+                        <li>
+                            Daz Buttars
+                        </li>
+                        <li>Last Updated: 10/28/16
+                            <!-- Put today's date following the colon -->
+                        </li>
+                    </ul>
+                </footer>
+        </body>
 
 
 

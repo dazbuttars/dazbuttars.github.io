@@ -1,0 +1,161 @@
+body{
+    font-family: sans-serif;
+    background-image: url(../images/wheat2.jpg);
+    background-attachment: fixed;
+    margin: 0px;
+}
+
+
+
+
+/*navication bar */
+nav{
+    text-align: center;
+    font-size: 1.6em
+}
+#bar{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+a:link, a:visited{
+    display: block;
+    width: auto;
+    text-align: center;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px;
+
+
+}
+a:hover, actice {
+    background-color: grey;
+}
+
+
+
+/*Flex box content*/
+h1{
+    text-align: center;
+    margin: 50px;
+}
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(211,211,211,0.5);
+    border: 1px solid black;
+}
+figure{
+    display: flex;
+}
+
+.hi{
+    padding:0;
+    margin-right:0;
+    margin-bottom: 0px;
+    color: red;
+    font-size: 2.5em;
+}
+.lo{
+    padding:0;
+    margin-left:20px;
+    margin-bottom: 0px;
+    color: blue;
+    font-size: 2.5em;
+
+}
+/*Hourly Temperature*/
+table, th, td{
+    border: 1px solid black;
+    width: 20vw
+}
+#table{
+    background-color: rgba(211,211,211,0.5);
+    border: 1px solid black;
+}
+#htemp{
+    text-align: center;
+}
+#wireS, #wireM, #wireL{
+    width:300px;
+    height: 533px;
+}
+#wirefigure{
+    margin: 0px;
+    display: flex;
+}
+footer{color: white;}
+
+
+
+   /*For small screens*/
+    @media screen and (max-width: 425px){
+        #table{display: none;}
+
+        #wireS{
+            display: block;
+        }
+        #wireM{
+            display: none;
+        }
+        #wireL{
+            display: none;
+        }
+    }
+    /*Fore medium screens*/
+    @media screen and (min-width: 426px) and (max-width: 768px){
+        #table{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        table{
+            width:60vw;
+        }
+        #wireS{
+            display: none;
+        }
+        #wireM{
+            display: block;
+        }
+        #wireL{
+            display: none;
+        }
+    }
+
+    /*For large screens*/
+    @media screen and (min-width: 769px) and (max-width: 2600px){
+    main{
+        display: flex;
+        justify-content: space-around;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+    #bar{
+        display: inline-flex;
+    }
+
+    a:link, a:visited{
+        width: 25vw;
+    }
+        #wireS{
+            display: none;
+        }
+        #wireM{
+            display: none;
+        }
+        #wireL{
+            display: block;
+        }
+}
+
+
