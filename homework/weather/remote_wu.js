@@ -33,7 +33,11 @@ $(function () {
             $('#titleCity').prepend(data.location.city +', '+ data.location.state + ' ')
             $('.cityDisplay').text('Current Forcast for '+data.location.city +', '+ data.location.state + ' ' +'('+ data.location.zip+')');
 
-            $('#image').append('<img src = "'+data.current_observation.icon_url + '" alt = "Weather condition image">')
+            $('#image').append('<img src = "'+data.current_observation.icon_url + '" alt = "Weather condition image">');
+
+            $('.lat').text('Latitude: '+data.location.lat);
+
+            $('.lon').text('Longitude: '+data.location.lon);
 
             $('.current').text(Math.round(data.current_observation.temp_f) + "\xB0" + "F");
 
