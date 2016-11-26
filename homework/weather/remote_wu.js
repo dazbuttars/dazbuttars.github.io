@@ -25,7 +25,7 @@ $(function () {
 
     $.ajax({
 
-        url : "https://api.wunderground.com/api/ac52a58a98171ab0/geolookup/conditions/astronomy/q/" + lat +","+ long + ".json",
+        url : "http://api.wunderground.com/api/ac52a58a98171ab0/geolookup/conditions/astronomy/q/" + lat +","+ long + ".json",
         dataType: "jsonp",
         success : function(data){
 
