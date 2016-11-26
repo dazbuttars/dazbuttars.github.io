@@ -11,11 +11,19 @@
 
 
 
-        <title>Greenville Weather</title>
+        <title id="titleCity"> Weather</title>
+
 
 
     </head>
-
+    <!--  *********************************************
+* Who Did You Collaborate With On This Assessment?
+* 1. Daz Buttars
+* 2. Fekadu Haile
+* 3. Scott Croft
+* 4.
+* 5.
+* ******************************************** -->
     <body>
 
 
@@ -28,28 +36,31 @@
 
         <main>
             <div id="content">
-                <h1>Weather Forecast For Greenville, SC (29601)</h1>
+                <h1 class= "cityDisplay"></h1>
 
-                <h2 class="forecast">Todays Forecast: Afternoon Thunderstorms</h2>
-                <h3>Precipitation: 70%</h3>
+                <h2 class="forecast"></h2>
+                <h3 id= "percipitation"></h3>
 
                 <figure>
-                    <img alt="Weather condition image" src="../../images/weather/tstorm2.png">
+                    <div id = image></div>
 
-                    <p class="hi">Hi<br>84</p>
-                    <p class="lo">Lo<br>55</p>
+
+                    <p class="current"></p>
+
                 </figure>
 
 
 
 
 
-                <h3 class="wind">Wind 15-20 mph West</h3>
-                <h3 class="ll">Longitude: -82.362997 <br>
-                    Latitude: 34.836902 </h3>
+                <h3 class="wind"></h3>
+                <h3 class="ll">
+                    <div id = lon></div><br>
+                    <div id = lat></div>
+                </h3>
             </div>
 
-            <div id="table">
+           <!-- <div id="table">
                 <h3 id=htemp>Hourly Temperature</h3>
                 <table>
                     <tr>
@@ -58,102 +69,102 @@
                     </tr>
                     <tr>
                         <th>Midnight</th>
-                        <th>55</th>
-                    </tr>
-                    <tr>
-                        <th>1am</th>
-                        <th>56</th>
-                    </tr>
-                    <tr>
-                        <th>2am</th>
-                        <th>56</th>
-                    </tr>
-                    <tr>
-                        <th>3am</th>
-                        <th>56</th>
-                    </tr>
-                    <tr>
-                        <th>4am</th>
-                        <th>57</th>
-                    </tr>
-                    <tr>
-                        <th>5am</th>
-                        <th>57</th>
-                    </tr>
-                    <tr>
-                        <th>6am</th>
-                        <th>58</th>
-                    </tr>
-                    <tr>
-                        <th>7am</th>
-                        <th>62</th>
-                    </tr>
-                    <tr>
-                        <th>8am</th>
-                        <th>63</th>
-                    </tr>
-                    <tr>
-                        <th>9am</th>
                         <th>67</th>
                     </tr>
                     <tr>
-                        <th>10am</th>
+                        <th>1am</th>
+                        <th>67</th>
+                    </tr>
+                    <tr>
+                        <th>2am</th>
+                        <th>69</th>
+                    </tr>
+                    <tr>
+                        <th>3am</th>
+                        <th>69</th>
+                    </tr>
+                    <tr>
+                        <th>4am</th>
+                        <th>69</th>
+                    </tr>
+                    <tr>
+                        <th>5am</th>
                         <th>70</th>
                     </tr>
                     <tr>
-                        <th>11am</th>
-                        <th>73</th>
+                        <th>6am</th>
+                        <th>69</th>
                     </tr>
                     <tr>
-                        <th>Noon</th>
-                        <th>77</th>
+                        <th>7am</th>
+                        <th>72</th>
                     </tr>
                     <tr>
-                        <th>1pm</th>
-                        <th>80</th>
-                    </tr>
-                    <tr>
-                        <th>2pm</th>
-                        <th>84</th>
-                    </tr>
-                    <tr>
-                        <th>3pm</th>
-                        <th>83</th>
-                    </tr>
-                    <tr>
-                        <th>4pm</th>
-                        <th>83</th>
-                    </tr>
-                    <tr>
-                        <th>5pm</th>
-                        <th>80</th>
-                    </tr>
-                    <tr>
-                        <th>6pm</th>
-                        <th>79</th>
-                    </tr>
-                    <tr>
-                        <th>7pm</th>
+                        <th>8am</th>
                         <th>74</th>
                     </tr>
                     <tr>
+                        <th>9am</th>
+                        <th>77</th>
+                    </tr>
+                    <tr>
+                        <th>10am</th>
+                        <th>79</th>
+                    </tr>
+                    <tr>
+                        <th>11am</th>
+                        <th>81</th>
+                    </tr>
+                    <tr>
+                        <th>Noon</th>
+                        <th>84</th>
+                    </tr>
+                    <tr>
+                        <th>1pm</th>
+                        <th>86</th>
+                    </tr>
+                    <tr>
+                        <th>2pm</th>
+                        <th>88</th>
+                    </tr>
+                    <tr>
+                        <th>3pm</th>
+                        <th>90</th>
+                    </tr>
+                    <tr>
+                        <th>4pm</th>
+                        <th>90</th>
+                    </tr>
+                    <tr>
+                        <th>5pm</th>
+                        <th>85</th>
+                    </tr>
+                    <tr>
+                        <th>6pm</th>
+                        <th>83</th>
+                    </tr>
+                    <tr>
+                        <th>7pm</th>
+                        <th>79</th>
+                    </tr>
+                    <tr>
                         <th>8pm</th>
-                        <th>70</th>
+                        <th>74</th>
                     </tr>
                     <tr>
                         <th>9pm</th>
-                        <th>68</th>
+                        <th>70</th>
                     </tr>
                     <tr>
                         <th>10pm</th>
-                        <th>60</th>
+                        <th>68</th>
                     </tr>
                     <tr>
                         <th>11pm</th>
-                        <th>58</th>
+                        <th>66</th>
                     </tr>
                 </table>
-            </div>
+            </div>                                 -->
         </main>
 
 
@@ -161,8 +172,10 @@
 
 
         <footer id="footer"></footer>
-            <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-            <script src="modules.js"></script>
+        <img src = "../jsonweather-html/images/wulogo_rev.png" alt="Weatherunderground logo" title="All weather data provided by WeatherUnderground.com">
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+        <script src="remote_wu.js"></script>
+        <script src="modules.js"></script>
     </body>
 
 
