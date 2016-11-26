@@ -16,7 +16,7 @@ nav{
 #bar{
     list-style-type: none;
     margin: 0px;
-    padding: 0px;
+    padding:0px;
     text-align: center;
 }
 
@@ -56,6 +56,7 @@ figure{
     display: flex;
 }
 
+
 .hi{
     padding:0;
     margin-right:0;
@@ -70,6 +71,13 @@ figure{
     color: blue;
     font-size: 2.5em;
 
+}
+.current{
+    padding:0;
+    margin-right:0;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 8em;
 }
 /*Hourly Temperature*/
 table, th, td{
@@ -139,13 +147,15 @@ footer{color: white;}
     nav{
         display: flex;
         justify-content: center;
+        font-size: 1em
     }
     #bar{
         display: inline-flex;
     }
 
     a:link, a:visited{
-        width: 25vw;
+        width: 18.3vw;
+
     }
         #wireS{
             display: none;
