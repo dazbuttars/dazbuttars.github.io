@@ -7,7 +7,6 @@ body{
 
 
 
-
 /*navication bar */
 nav{
     text-align: center;
@@ -19,7 +18,6 @@ nav{
     padding:0px;
     text-align: center;
 }
-
 a:link, a:visited{
     display: block;
     width: auto;
@@ -29,15 +27,37 @@ a:link, a:visited{
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
+    padding: 10px;
+}
+ol{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    margin-bottom: 0px
+}
+.nav:link, .nav:visited{
+    display: block;
+    width: auto;
+    text-align: center;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
     padding: 5px;
-
+margin-top: 0px;
 
 }
-a:hover, actice {
+.nav:hover, actice {
     background-color: grey;
 }
 
-
+.search{
+    height: 40px;
+    width: 100vw;
+    font-size: 14pt;
+}
 
 /*Flex box content*/
 h1{
@@ -153,10 +173,24 @@ footer{color: white;}
         display: inline-flex;
     }
 
-    a:link, a:visited{
-        width: 18.3vw;
+   .nav:link, .nav:visited{
+        width: 15vw;
 
     }
+
+        .search{
+            height: 40px;
+            width: 50vw;
+            font-size: 14pt;
+        }
+
+        header{
+            padding-right: 20vw;
+            padding-left: 20vw;
+
+        }
+
+
         #wireS{
             display: none;
         }

@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <title class="cityDisplay">Weather Home</title>
-  <meta name="viewport" content="width=device-width">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/weather-style.css"
-    type="text/css" media="screen">
-  <link rel="stylesheet" href="css/user_styles.css" type="text/css" media="screen">
+    <head>
+        <meta charset="UTF-8">
+        <title class="cityDisplay">Weather Home</title>
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/weather-style.css"
+              type="text/css" media="screen">
+        <link rel="stylesheet" href="css/user_styles.css" type="text/css" media="screen">
 
-</head>
-<!--  *********************************************
+    </head>
+    <!--  *********************************************
 * Who Did You Collaborate With On This Assessment?
 * 1. Daz Buttars
 * 2. Fekadu Haile
@@ -19,35 +19,35 @@
 * 4.
 * 5.
 * ******************************************** -->
-<body>
-  <div id="wrapper">
-    <header id="page-header"></header>
-    <nav id="page-nav"></nav>
-    <main id="page-main">
-      <section class="weather-container">
-        <div id="cover">
-          <div id="status">Loading...</div>
+    <body>
+        <div id="wrapper">
+            <header id="page-header"></header>
+            <nav id="page-nav"></nav>
+            <main id="page-main">
+                <section class="weather-container">
+                    <div id="cover">
+                        <div id="status">Loading...</div>
+                    </div>
+                    <h1 class="cityDisplay"></h1>
+                    <h2>Current Conditions</h2>
+                    <ul id="current_conditions">
+                        <li id="currentTemp"></li>
+                        <li id="summary"></li>
+                        <li id="add1"></li>
+                        <li id="add2"></li>
+                        <li id="add3"></li>
+                    </ul>
+                </section>
+            </main>
+            <footer id="page-footer">
+                <div id="footer-content"></div>
+                <small id=update></small>
+            </footer>
+            <!-- <script src="scripts/jquery-3.0.0.min.js"></script> -->
+            <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+            <script src="scripts/modules.js"></script>
+            <script src="scripts/remote_wu.js"></script>
         </div>
-        <h1 class="cityDisplay"></h1>
-        <h2>Current Conditions</h2>
-        <ul id="current_conditions">
-            <li id="currentTemp"></li>
-          <li id="summary"></li>
-          <li id="add1"></li>
-          <li id="add2"></li>
-          <li id="add3"></li>
-        </ul>
-      </section>
-    </main>
-    <footer id="page-footer">
-      <div id="footer-content"></div>
-      <small id=update></small>
-    </footer>
-   <!-- <script src="scripts/jquery-3.0.0.min.js"></script> -->
-      <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
-    <script src="scripts/modules.js"></script>
-    <script src="scripts/remote_wu.js"></script>
-  </div>
-</body>
+    </body>
 
 </html>
