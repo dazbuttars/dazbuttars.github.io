@@ -26,13 +26,22 @@ $('#query').keyup(function () {
 }); // end onkeyup
 
 
-$('#searchResults').on('click', 'a', function(event) {
+$('#searchResults').on('click', 'a', function (event) {
     event.preventDefault();
     index = $(this).index("a");
     getData(returned.RESULTS[index].lat, returned.RESULTS[index].lon);
     $('#searchResults').toggle();
 });
 
+$('#enter').keypress(function (event) {
+
+    if (event.which == 13) {
+        event.preventDefault();
+        index = $(this).index("0");
+        getData(returned.RESULTS[0].lat, returned.RESULTS[0].lon);
+        $('#searchResults').toggle();
+    }
+})
 
 
 // Get the data from the wunderground API
@@ -77,12 +86,8 @@ function getData(lat, long) {
 }
 
 // A function for changing a string to TitleCase
-function toTitleCase(str){
-    return str.replace(/\w+/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+function toTitleCase(str) {
+    return str.replace(/\w+/g, function (txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    });
 }
-
-
-
-
-
-
