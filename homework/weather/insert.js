@@ -49,7 +49,7 @@ function getData(lat, long) {
 
     $.ajax({
 
-        url: "https://api.wunderground.com/api/ac52a58a98171ab0/geolookup/conditions/astronomy/q/" + lat + "," + long + ".json",
+        url: "https://api.wunderground.com/api/ac52a58a98171ab0/geolookup/conditions/astronomy/forecast/q/" + lat + "," + long + ".json",
         dataType: "jsonp",
         success: function (data) {
             console.log('success', data);
@@ -59,11 +59,19 @@ function getData(lat, long) {
 
             $('#image').html('<img src = "' + data.current_observation.icon_url + '" alt = "Weather condition image">');
 
+            var high = data['forecast']['simpleforecast']['forecastday']['0']['high']['fahrenheit'];
+
+            var low = data['forecast']['simpleforecast']['forecastday']['0']['low']['fahrenheit'];
+
             $('.lat').text('Latitude: ' + data.location.lat);
 
             $('.lon').text('Longitude: ' + data.location.lon);
 
             $('.current').text(Math.round(data.current_observation.temp_f) + "\xB0" + "F");
+
+            $(".hi").text("Hi: " + high + "°" + "F");
+
+            $(".lo").text("Lo: " + low + "°" + "F");
 
             $('.forecast').text('Todays Forecast: ' + data.current_observation.weather);
 
@@ -87,7 +95,6 @@ function getData(lat, long) {
 
 // A function for changing a string to TitleCase
 function toTitleCase(str) {
-    return str.replace(/\w+/g, function (txt) {
-        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    return str.replace(/\w+/g, function (txt) {return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
     });
 }

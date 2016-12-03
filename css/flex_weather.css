@@ -78,7 +78,6 @@ figure{
 
 
 .hi{
-    padding:0;
     margin-right:0;
     margin-bottom: 0px;
     color: red;
@@ -181,7 +180,7 @@ footer{color: white;}
         .search{
             height: 40px;
             width: 50vw;
-            font-size: 14pt;
+            font-size: 16pt;
         }
 
         header{
