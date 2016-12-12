@@ -1,0 +1,202 @@
+body {
+    color: white;
+    font-family: sans-serif;
+    width: 100%;
+
+    max-width: 100%;
+
+    margin: 0 auto;
+
+    background-color:#00352F;
+}
+div{
+    width: 100%;
+
+    max-width: 960px;
+
+    margin: 0 auto;
+}
+h1{
+    color: red;
+    font-family:cursive;
+    font-style: italic
+}
+
+h2{
+    text-align: center;
+}
+h3{
+    background: black;
+    color: white;
+    border: 3px solid rgb(247,2,1);
+    margin:3px;
+}
+p{
+    text-align: center;
+}
+a{
+    color: white;
+    font-weight: bold;
+}
+
+
+
+/************************************************************************************************************
+                                     NAVIGATION BAR
+************************************************************************************************************/
+#nav{
+    width: 100%;
+
+    max-width: 960px;
+
+    margin: 0 auto;
+}
+nav {
+    width: 100%;
+    max-width: 960px;
+    margin:0 auto;
+    margin: 20px 0;
+}
+
+nav ul{
+    width:100%;
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+nav ul li{
+    width: 100vw;
+}
+nav ul li a {
+    display:block;
+    width: 100%;
+
+    text-align: center;
+
+    padding: 8px 0;
+
+    display: block;
+
+    width: 100%;
+
+    background: #6A9E98; /* Old browsers */
+
+    background: -moz-linear-gradient(top, #6A9E98 0%, #42847D 100%); /* FF3.6+ */
+
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6A9E98), color-stop(100%,#42847D)); /* Chrome,Safari4+ */
+
+    background: -webkit-linear-gradient(top, #6A9E98 0%,#42847D 100%); /* Chrome10+,Safari5.1+ */
+
+    background: -o-linear-gradient(top, #6A9E98 0%,#42847D 100%); /* Opera 11.10+ */
+
+    background: linear-gradient(to bottom, #6A9E98 0%,#42847D 100%); /* W3C standard, IE10+ */
+
+
+
+}
+nav ul li a:hover {
+
+    background: #42847D; /* Old browsers */
+
+    background: -moz-linear-gradient(top, #42847D 0%, #236A62 100%); /* FF3.6+ */
+
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#42847D), color-stop(100%,#236A62)); /* Chrome,Safari4+ */
+
+    background: -webkit-linear-gradient(top, #42847D 0%,#236A62 100%); /* Chrome10+,Safari5.1+ */
+
+    background: -o-linear-gradient(top, #42847D 0%,#236A62 100%); /* Opera 11.10+ */
+
+    background: linear-gradient(to bottom, #42847D 0%,#236A62 100%); /* W3C standard, IE10+ */
+
+
+
+}
+nav ul li a,
+
+nav ul li a:focus,
+
+nav ul li a:visited,
+
+nav ul li a:hover,
+
+nav ul li a:active {
+
+    color: white;
+
+    text-decoration: none; }
+/******************************************************************************************************************
+                                          PHOTO'S
+******************************************************************************************************************/
+#homepic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutpic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/***************************************************************************************************************
+                                              VIDEO'S
+***************************************************************************************************************/
+video{
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    height: 300px;
+}
+/****************************************************************************************
+For small screens
+*****************************************************************************************/
+@media screen and (max-width: 400px){
+
+}
+
+/*Fore medium screens*/
+@media screen and (min-width: 401px) and (max-width: 768px){
+    video{
+        display: block;
+        margin: 0 auto;
+        width: 700px;
+        height: 471.4px;
+    }
+}
+
+/*For large screens*/
+@media screen and (min-width: 769px) and (max-width: 2600px){
+    /* NAVIGATION BAR*/
+    nav ul li {
+        float: left;
+        width: 20%
+    }
+}
+    #photos{
+        width: 100%;
+
+        max-width: 95vw;
+
+        margin: 0 auto;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
